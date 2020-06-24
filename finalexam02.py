@@ -6,16 +6,11 @@ class Point:
         self.y=b
     
     def distance(self, Point):
-        return math.sqrt((self.x-Point.getx())**2+(self.y-Point.gety())**2)
-
-    def getx(self):
-        return self.x
-
-    def gety(self):
-        return self.y
+        return math.sqrt((self.x-Point.x)**2+(self.y-Point.y)**2)
 
     def __add__(self,Point):
         return self.x+Point.x,self.y+Point.y
+
 
 p1 = Point(1,1)
 p2 = Point(2,2)
